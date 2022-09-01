@@ -117,7 +117,7 @@
 					    	</div>
 						</div>
 				    </div>
-					<img id='colorMenu_btn' src='images/barColors.png' alt='Open Alert' onmouseout="NgChm.UHM.colorOver(0);NgChm.UHM.hlpC();" onmouseover='NgChm.UHM.colorOver(1);NgChm.UHM.hlp(this,"Edit Map Colors",80,0)' onclick='NgChm.UPM.editPreferences(this,null);' style="vertical-align: top;"   />
+            <!--					<img id='colorMenu_btn' src='images/barColors.png' alt='Open Alert' onmouseout="NgChm.UHM.colorOver(0);NgChm.UHM.hlpC();" onmouseover='NgChm.UHM.colorOver(1);NgChm.UHM.hlp(this,"Edit Map Colors",80,0)' onclick='NgChm.UPM.editPreferences(this,null);' style="vertical-align: top;"   />-->
 					<img id='barMenu_btn' class='farRightButton' src='images/barMenu.png' alt='Open Menu' onmouseout='NgChm.UHM.menuOver(0);NgChm.UHM.hlpC();' onmouseover='NgChm.UHM.menuOver(1);NgChm.UHM.hlp(this,"Options Menu",140,0)' onclick='NgChm.UHM.openMenu(this);' style="vertical-align: top;"/>
 			                <div id="droptarget" class="">DROP HERE</div>
 			    </div>
@@ -269,6 +269,7 @@
 			</div>
 			<div id="burgerMenuPanel" style="display: none;">
 				<div class="menuItemTop"></div>
+        <div id="menuGear" class="menuItem" onclick='NgChm.UPM.editPreferences(this,null);'>Heat Map Preferences...</div>
 				<div id="menuPdf" class="menuItem" onclick='NgChm.PDF.openPdfPrefs(this,null);'>Save as PDF...</div>
         <!--<div id="menuPng" class="menuItem" onclick='NgChm.UTIL.downloadSummaryPng(this);'>Download Thumbnail...</div>-->
 				<div id="menuSave" class="menuItem" onclick='NgChm.UHM.saveHeatMapChanges();'>Save as NGCHM...</div>
